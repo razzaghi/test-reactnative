@@ -1,7 +1,8 @@
 stage 'build_Project'
 node{
   if(isUnix()){
-    sh 'cd android'
+    dir android
+    pwd
     sh './gradlew assembleRelease'
 
   }
