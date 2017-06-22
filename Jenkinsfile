@@ -1,6 +1,6 @@
 stage 'build_Project'
-node{
-    dir android
-    pwd
-    sh './gradlew assembleRelease'
+node ('master'){
+    dir ('android'){
+       sh './gradlew assembleRelease'
+    }
 }
